@@ -11,7 +11,7 @@ const startServer = () => {
     const app = express();
     const limit = rateLimit({
         windowMs : 2 * 60 * 1000 , 
-        max : 10 , 
+        max : 15 , 
         message: 'Please try again after 2 minutes . Too many requests made .'        
     });
 
